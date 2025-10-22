@@ -1,35 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from "react";
+import "./index.css"; // Ensure Tailwind is imported here
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="min-h-screen bg-gray-50 text-gray-800 flex flex-col items-center justify-center">
+      <header className="text-center mb-8">
+        <h1 className="text-4xl font-bold text-blue-600 mb-2">Equipment Manager</h1>
+        <p className="text-gray-600">Manage, monitor, and maintain your medical equipment efficiently.</p>
+      </header>
+
+      <main className="grid gap-4 w-full max-w-lg px-4">
+        <div className="p-4 bg-white shadow rounded-xl">
+          <h2 className="text-xl font-semibold mb-2">Total Equipment</h2>
+          <p className="text-2xl font-bold text-green-600">120</p>
+        </div>
+
+        <div className="p-4 bg-white shadow rounded-xl">
+          <h2 className="text-xl font-semibold mb-2">Under Maintenance</h2>
+          <p className="text-2xl font-bold text-yellow-500">8</p>
+        </div>
+
+        <div className="p-4 bg-white shadow rounded-xl">
+          <h2 className="text-xl font-semibold mb-2">Active Technicians</h2>
+          <p className="text-2xl font-bold text-blue-500">5</p>
+        </div>
+      </main>
+    </div>
+  );
 }
 
-export default App
+export default App;
