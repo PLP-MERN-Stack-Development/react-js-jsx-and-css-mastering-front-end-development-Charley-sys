@@ -9,7 +9,7 @@ It focuses on **component architecture**, **state management**, **API integratio
 
 ## 🚀 **Deployment**
 
-🔗 **Live Demo:** [View the Deployed App](https://y-65hyhbryb-charles-otienos-projects-7eea7a88.vercel.app )
+🔗 **Live Demo:** [View the Deployed App](https://y-svqjkeivz-charles-otienos-projects-7eea7a88.vercel.app/)
 
 
 
